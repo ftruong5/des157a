@@ -1,0 +1,145 @@
+body {
+    background-color: #0D0630;
+}
+#container {
+    max-width: 1200px;
+    min-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner {
+    /* max-width: 1200px; */
+    /* max-height: 250px; */
+    width: 40%;
+}
+
+h1 {
+    color: #FFD5EF; 
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 95px;
+    margin-top: 160px;
+    margin-left: 60px;
+    position: relative;
+}
+
+h1 span {
+    display: block;
+    margin-left: 150px;
+}
+
+.glowingstar {
+    position: absolute;
+    filter: drop-shadow(0 0 12px rgba(255, 213, 239, 0.8));
+    animation: glow 2s infinite alternate ease-in-out;
+}
+
+.star1 {
+    top: -50px;
+    left: 325px;
+    animation-delay: 0s;
+}
+
+.star2 {
+    top: 40px;
+    left: 395px;
+    animation-delay: 0s;
+}
+
+.star3 {
+    top: 140px;
+    left: 10px;
+    animation-delay: 0s;
+}
+
+@keyframes glow {
+    0% { 
+        opacity: 0.5;
+        filter: drop-shadow(0 0 3px rgba(255, 213, 239, 0.4));
+    }
+
+    100% {
+        opacity: 1;
+        filter: drop-shadow(0 0 18px rgba(255, 213, 239, 1));
+    }
+}
+
+h2 {
+    color: #FFD5EF;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 15%;
+}
+
+#course {
+    color: #99D3FF;
+    font-family: "Oldenburg", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    margin: 0;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+main ul li a {
+    text-decoration: none;
+    color: #99D3FF;
+    font-family: "Oldenburg", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 37px;
+    transition: all 0.7s ease-in-out;
+}
+
+main ul li a:hover {
+    color: #FFF953;
+    filter: drop-shadow(0 0 15px rgba(255, 213, 239, 0.8));
+}
+
+.projects {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    text-align: right;
+    
+}
+
+footer a, p {
+    text-decoration: none;
+    color: #99D3FF;
+    font-family: "Oldenburg", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 15px;
+    transition: all 0.7s ease-in-out;
+}
+
+footer a:hover {
+    color: #FFF953;
+    filter: drop-shadow(0 0 15px rgba(255, 213, 239, 0.8));
+}
