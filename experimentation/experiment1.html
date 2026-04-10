@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Look in the console to see results</h2>
+
+    <script>
+        /* For my Experiment 1, the user selects an item for the minion to eat, then a message that goes with the item is outputted. */
+
+        /* sequence step 1 */
+        var minionFood = prompt("What did your minion eat? Select an item. banana, fart gun, the moon", "");
+
+        /* sequence step 2 the loop */
+        for (var i=0; i<minionFood.length; i++){
+            /* sequence step 3 the selection*/
+            if (minionFood == "banana"){
+                console.log(minionFood.toUpperCase() + " CONSUMED. Your minion wants more bananas.");
+            
+            }
+
+            else if (minionFood == "fart gun"){
+                console.log(minionFood.toUpperCase() + " CONSUMED. Your minion is filled with gas.");
+            }
+
+            else if (minionFood == "the moon"){
+                console.log(minionFood.toUpperCase() + " CONSUMED. Your minion is looking extra round today.");
+            }
+
+        } 
+
+    </script>
+</body>
+</html>
