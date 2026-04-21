@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2: Color Me!</h1>
+    <h2></h2>
+
+    <!-- the purpose of this experiment is to change the background color of the web page -->
+
+    <script>
+        var colorOptions = [
+            {name: 'pink', hex: '#ffd5ef'},
+            {name: 'blue', hex: '#99d3ff'},
+            {name: 'mint', hex: '#83e8ba'},
+            {name: 'yellow', hex: '#fff953'},
+        ]
+
+        function userColor(paletteArray){
+            var instructions = 'Enter a color to change the background:\n';
+
+            for (var i=0; i<paletteArray.length; i++){
+                instructions += "- " + paletteArray[i].name + '\n' 
+            }
+
+            var userOption = prompt(instructions);
+
+                if (userOption != null){
+                    userOption = userOption.toLowerCase();
+                }
+
+                else {
+                    userOption = 'cancelled';
+                }
+
+            return userOption
+        }
+
+        function applyBackground(userChoice, paletteArray){
+            var applyHex = null;
+
+            for (var i=0; i<paletteArray.length; i++){
+                if (userChoice === paletteArray[i].name){
+                    applyHex = paletteArray[i].hex;
+                }
+            }
+
+            if (applyHex !== null){
+                document.body.style.backgroundColor = applyHex;
+            }
+
+            return applyHex;
+        }
+
+        var chosenBackground = userColor(colorOptions);
+        applyBackground(chosenBackground, colorOptions);
+    </script>
+</body>
+</html>
