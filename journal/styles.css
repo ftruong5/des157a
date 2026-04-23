@@ -5,7 +5,14 @@ body {
     margin-right: 10%;
 }
 
-nav a {
+.blog-post {
+    border: #99D3FF solid 2px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.cta {
     text-decoration: none;
     color: #0D0630;
     font-family: "Oldenburg", serif;
@@ -17,12 +24,35 @@ nav a {
     background-color: #99D3FF;
 }
 
+nav a {
+    text-decoration: none;
+    color: #0D0630;
+    font-family: "Oldenburg", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    border: #99D3FF solid 13px;
+    border-radius: 15px;
+    background-color: #99D3FF;
+    transition: all 0.7s ease-in-out;
+
+}
+
+nav a:hover {
+    color: #FFF953;
+    filter: drop-shadow(0 0 15px rgba(255, 213, 239, 0.8));
+}
+
 h1 {
     color: #FFD5EF; 
     font-family: "Oleo Script Swash Caps", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 75px;
+}
+
+h2 {
+    color: #FFD5EF;
 }
 
 article {
@@ -41,4 +71,10 @@ article a {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    transition: all 0.7s ease-in-out;
+}
+
+article a:hover {
+    color: #FFF953;
+    filter: drop-shadow(0 0 15px rgba(255, 213, 239, 0.8));
 }
