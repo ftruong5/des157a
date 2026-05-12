@@ -1,0 +1,56 @@
+/* Experiment 1 */
+.container1 {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    cursor: zoom-in;
+}
+
+#experiment1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+}
+
+/* Experiment 3 */
+.container3 {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    cursor: zoom-in;
+    position: relative;
+}
+
+#experiment3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+}
+
+.emojiOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.emoji-show {
+    opacity: 1;
+}
+
+
