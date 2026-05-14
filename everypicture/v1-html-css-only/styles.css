@@ -1,0 +1,63 @@
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: rgb(129, 221, 255);
+}
+
+h1 {
+    font-family: "Flavors", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    animation: blueFlash 0.5s infinite;
+}
+
+@keyframes blueFlash {
+    0% {
+        color: black;
+        text-shadow: none;
+    }
+
+    50% {
+        color: blue;
+        text-shadow:
+            0 0 10px rgb(0, 180, 255),
+            0 0 25px rgb(0, 180, 255),
+            0 0 50px rgb(0, 180, 255);
+        
+    }
+
+    100% {
+        color: black;
+        text-shadow: none;
+    }
+}
+
+h2 {
+    font-family: "Finger Paint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+p {
+    font-family: "Finger Paint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.img-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.img-container img {
+    max-width: 100%;
+    min-height: auto;
+    display: block;
+    border-radius: 20px;
+}
