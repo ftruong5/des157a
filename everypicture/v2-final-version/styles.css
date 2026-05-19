@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #091540;
+    overflow-x: hidden;
+    margin: 0;  
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+section {
+    background-color: #7692ff;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: "Flavors", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color: #7692ff;
+    text-align: center;
+    animation: blueFlash 0.5s infinite;
+}
+
+h2 {
+    font-family: "Finger Paint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #091540;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+p {
+    font-family: "Finger Paint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #091540;
+    text-align: center;
+}
+
+.directions {
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.img-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    min-height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.level2 {
+    display: none;
+}
+
+.level3 {
+    display: none;
+}
+
+.prompt-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-btn {
+    margin-left: auto;
+}
+
+.next-btn, .back-btn {
+    font-family: "Finger Paint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1b2cc1;
+    background-color: #abd2fa;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.next-btn:hover, .back-btn:hover {
+    background-color: #1b2cc1;
+    color: #abd2fa;
+}
+
+.secret-img {
+    position: relative;
+    display: inline-block;
+}
+
+.secret-img img {
+    display: block;
+    border-radius: 20px;
+}
+
+.secret-img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: radial-gradient(circle 80px at -999px -999px, transparent 20px, rgba(0,0,0,0.7) 50px, black 70px);
+    pointer-events: none;
+}
