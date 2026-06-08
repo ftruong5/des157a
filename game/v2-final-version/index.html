@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On: Reaction Duel</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript link -->
+   <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="title-screen">
+        <h1>Reaction Duel</h1>
+        <p>Find the button. Click it as fast as you can.</p>
+        <button id="start-btn">Start Game</button>
+    </section>
+    
+    <section class="player1-screen hidden">
+        <h1>Reaction Duel</h1>
+        <h2>Player 1's Turn</h2>
+        <p>WAIT...</p>
+        <button id="click-btn1">Click Me!</button>
+    </section>
+
+    <section class="player1-results hidden">
+        <h1>Reaction Duel</h1>
+        <h2>Player 1's Time</h2>
+        <p player1-time></p>
+    </section>
+
+    <section class="player2-screen hidden">
+        <h1>Reaction Duel</h1>
+        <h2>Player 2's Turn</h2>
+        <p>WAIT...</p>
+        <button id="click-btn2">Click Me!</button>
+    </section>
+
+    <section class="player2-results hidden">
+        <h1>Reaction Duel</h1>
+        <h2>Player 2's Time</h2>
+        <p player2-time></p>
+    </section>
+
+    <section class="winner-screen hidden">
+        <h1>Reaction Duel</h1>
+        <p id="winner-msg"></p>
+        <button id="restart-btn">Play Again?</button>
+    </section>
+
+    <footer class="sources">
+        <p>Designed by Felicia Truong</p>
+        <a href="sources.html">Sources</a>
+    </footer>
+
+    <audio src="audio/bgMusic.mp3" id="bg-music" loop></audio>
+    <audio src="audio/buttonClick.mp3" id="btn-click-sound"></audio>
+    <audio src="audio/wow.mp3" id="wow-sound"></audio>
+</body>
+</html>

@@ -1,0 +1,178 @@
+body {
+    background-color: #FFF693;
+}
+
+h1, h2 {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    background: linear-gradient(0deg, #BA0101 2%, #E99D25 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #650101;
+}
+
+h2 {
+    color: #650101;
+    font-size: 60px;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    color: #650101;
+}
+
+button {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #FFF693;
+    background-color: #BA0101;
+    border: 4px solid #650101;
+    border-radius: 10px;
+    -webkit-text-stroke: 2px #650101;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E99D25;
+    color: #BA0101;
+}
+
+.title-screen {
+    background-color: #E99D25;
+    background: radial-gradient(circle, #FFF693 10.83%, rgba(233, 157, 37, 0.60) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.title-screen h1 {
+    font-size: 120px;
+    margin-bottom: 0px;
+    color: #E99D25;
+    -webkit-text-stroke: 8px #650101;
+}
+
+.title-screen p {
+    margin-bottom: 70px;
+    font-size: 25px;
+}
+
+.player1-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.player1-screen h1 {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+}
+
+.player1-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.player1-results h1 {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+}
+
+.player2-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.player2-screen h1 {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+}
+
+.player2-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.player2-results h1 {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+}
+
+.winner-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.winner-screen h1 {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+}
+
+.sources {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sources a, .sources p {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    color: #650101;
+}
+
+.sources a:hover {
+    color: #BA0101;
+}
+
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,45 @@
+body {
+    background-color: #FFF693;
+}
+
+h1 {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #650101;
+}
+
+ul li {
+    line-height: 60px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    color: #650101;
+}
+
+ul li a:hover {
+    color: #BA0101;
+}
+
+#back-link {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    color: #650101;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#back-link:hover {
+    color: #BA0101;
+}
