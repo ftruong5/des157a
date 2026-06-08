@@ -79,7 +79,7 @@
 
         //Calculate the difference from when the button appears to when Player 1 clicks it. Then display the results.
         player1FinalTime = Date.now() - player1Time;
-        document.querySelector('[player1-time]').textContent = 'Time: ' + player1FinalTime + 'ms';
+        document.querySelector('#player1-time').textContent = 'Time: ' + player1FinalTime + 'ms';
 
         player1Screen.className = 'player1-screen hidden';
         player1Results.className = 'player1-results';
@@ -124,7 +124,7 @@
 
         //Calculate the difference from when the button appears to when Player 2 clicks it. Then display the results.
         player2FinalTime = Date.now() - player2Time;
-        document.querySelector('[player2-time]').textContent = 'Time: ' + player2FinalTime + 'ms';
+        document.querySelector('#player2-time').textContent = 'Time: ' + player2FinalTime + 'ms';
 
         player2Screen.className = 'player2-screen hidden';
         player2Results.className = 'player2-results';
